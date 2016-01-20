@@ -1,0 +1,10 @@
+config
+coverage
+environments
+gulp
+logs
+node_modules
+scripts
+smoke
+src
+test

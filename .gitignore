@@ -1,0 +1,10 @@
+.env
+node_modules
+npm-debug.log
+cain-react-ui*.json
+coverage
+env
+dist
+package
+logs
+.idea

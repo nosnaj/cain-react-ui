@@ -1,0 +1,14 @@
+{
+  "network": {
+    "servers": [ "__LOGSTASH_SERVER__:9298" ],
+    "ssl certificate": "/opt/certs/lumberjack.crt",
+    "ssl key": "/opt/certs/lumberjack.key",
+    "ssl ca": "/opt/certs/lumberjack.crt",
+    "timeout": 200
+  },
+  "files": [
+    {
+      "paths": [ "/var/log/cain-react-ui-logs/cain-react-ui.json" ]
+    }
+  ]
+}

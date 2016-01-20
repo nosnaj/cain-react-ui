@@ -1,0 +1,11 @@
+{
+  "generator-seek-service": {
+    "gitRemote": "git@github.com:nosnaj/cain-react-ui.git",
+    "outputs": {
+      "Teamcity project": "http://54.169.30.142:8111/project.html?projectId=undefined",
+      "Elastic Beanstalk Console": "https://ap-southeast-1.console.aws.amazon.com/elasticbeanstalk/home?region=ap-southeast-1#/application/overview?applicationName=cain-react-ui",
+      "Application URL (dev)": "http://cain-react-ui-dev.elasticbeanstalk.com",
+      "Application URL (prod)": "http://cain-react-ui-prod.elasticbeanstalk.com"
+    }
+  }
+}

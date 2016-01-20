@@ -1,0 +1,41 @@
+{
+  "AWSEBDockerrunVersion": "2",
+  "authentication": {
+    "bucket": "elasticbeanstalk-ap-southeast-2-913299797597",
+    "key": "config/auth.json"
+  },
+  "volumes": [
+    {
+      "name": "logstash-conf",
+      "host": {
+        "sourcePath": "/var/app/current/logstash/logstash.d"
+      }
+    },
+    {
+      "name": "logstash-certs",
+      "host": {
+        "sourcePath": "/var/app/current/logstash/certs"
+      }
+    }
+  ],
+  "containerDefinitions": [
+    {
+      "name": "cain-react-ui",
+      "image": "closertome/cain-react-ui:__BUILD_NUMBER__",
+      "essential": true,
+      "memory": 512,
+      "portMappings": [
+        {
+          "hostPort": 80,
+          "containerPort": 9000
+        }
+      ],
+      "mountPoints": [
+        {
+          "sourceVolume": "awseb-logs-cain-react-ui",
+          "containerPath": "/var/log"
+        }
+      ]
+    }
+  ]
+}
