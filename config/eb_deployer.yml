@@ -106,7 +106,7 @@ common:
     # instance. See http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html
     - namespace: aws:autoscaling:launchconfiguration
       option_name: EC2KeyName
-      value: svc-teamcity
+      value: UGC-CAIN-EC2-SG
 
     # Following is an example which changes EC2 instance type
     # from t1.micro (default) to m1.small. Instances with t1.micro type sometime
