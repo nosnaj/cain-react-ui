@@ -1,7 +1,7 @@
 {
   "AWSEBDockerrunVersion": "2",
   "authentication": {
-    "bucket": "elasticbeanstalk-ap-southeast-2-913299797597",
+    "bucket": "elasticbeanstalk-ap-southeast-1-773480812817",
     "key": "config/auth.json"
   },
   "volumes": [
