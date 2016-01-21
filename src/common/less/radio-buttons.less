@@ -1,0 +1,33 @@
+input[type=radio] {
+    visibility: hidden;
+    position: relative;
+    width: 29px;
+    height: 29px;
+    margin:8px 8px 12px 0;
+    vertical-align: middle;
+    
+    &::before, &::after{
+        content: " ";
+        border-radius: 50%;
+        position: absolute;
+        visibility: visible;
+    }
+    
+    &::before {
+        height: 25px;
+        width: 25px;
+        border: 2px solid #d6d6d6;
+    }
+    
+    &:checked:after {
+        height: 21px;
+        width: 21px;
+        border: 2px solid #fff;
+        background-color: #a8a8a8;
+        margin: 2px;
+    }
+    
+    &:checked {
+      + span { font-weight: bold; }
+    }
+}

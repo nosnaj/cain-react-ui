@@ -1,6 +1,6 @@
-FROM mhart/alpine-node:0.12.7
+FROM mhart/alpine-node:5.4.1
 
-RUN npm install -g npm
+# RUN npm install -g npm
 
 RUN mkdir -p /var/app/current/dist
 WORKDIR /var/app/current
@@ -11,4 +11,4 @@ RUN npm install --production
 
 EXPOSE 9000
 
-CMD npm start
+CMD node ./dist/server/server.js

@@ -1,14 +1,12 @@
-# Cain React UI
+# joralocal-ui
 
-[![cain-react-ui Status](http://54.169.30.142:8111/app/rest/builds/buildType:Cain_CainReactUi_1Build/statusIcon "cain-react-ui")](http://54.169.30.142:8111/viewType.html?buildTypeId=Cain_CainReactUi_1Build)
-
-Cain
+JoraLocal Frontend
 
 ## Usage
 ### Build & Test
     $ npm run build
 ### Build & Publish Docker
-    $ ./scripts/docker.sh [version] cain-react-ui
+    $ ./scripts/docker.sh [version] joralocal-ui
 ### Package Elastic Beanstalk
     $ ./scripts/package.sh [version] [environment] [logstash-server]
 ### Deploy

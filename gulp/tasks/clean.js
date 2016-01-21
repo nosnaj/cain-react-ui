@@ -2,10 +2,10 @@
   'use strict';
 
   var gulp = require('gulp'),
-    del = require('del'),
+    rimraf = require('rimraf'),
     paths = require('../paths');
 
     gulp.task('clean', function(cb){
-      del(paths.build, cb);
+      rimraf(paths.build, cb);
     });
 })();
