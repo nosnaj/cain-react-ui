@@ -22,7 +22,7 @@ const history = createHistory();
 
 syncReduxAndRouter(history, store);
 
-clientDebug('rehydrating app');
+clientDebug('rehydrating app.');
 
 render(
   <Provider store={store}>
